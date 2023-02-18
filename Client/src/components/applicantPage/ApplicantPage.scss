@@ -1,0 +1,428 @@
+// #2ba7df  #7D838A
+@mixin applicant-section {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+    
+}
+
+.applicant-page-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap:10px;
+    .back-btn{
+        width: fit-content;
+        height: 30px;
+        padding : 0px 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border: 1px solid #2ba7df;
+        border-radius: 3px;
+        color: #2ba7df;
+        font-weight: 500;
+        font-size: 18px;
+        cursor: pointer;
+        &:hover {
+            background-color: transparent;
+        }
+    }
+    .applicant-infos{
+        width:95% ;
+        display: flex;
+        flex-direction: row;
+        height: 560px;
+        gap:15px;
+
+        .first-section{
+            @include applicant-section ;
+            flex: 0.65;
+            padding:10px ;
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+            .avatar-name-status-city-infos-wrapper{
+                margin-top: 7px;
+                width: 100%;
+                height: 80px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap:20px ;
+                .avatar{
+                    width:65px;
+                    height: 65px;
+                    display: flex;
+                    align-items: center;
+
+                    &>img {
+                        object-fit: cover ;
+                        height: 100%;
+                        width: 100%  ;
+                        border-radius: 50%;                  
+                    }
+                }
+                .name-status-city-infos-wrapper{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    .name{
+                        font-weight: 500;
+                        font-size: 17px;
+                    }
+                    .city{
+                        &>span{
+                            color: #7D838A;
+                            margin-top: 4px;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                        
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-left: -4px;
+                    }
+                    .status{
+                        
+                        width: -moz-fit-content;
+                        width: fit-content;
+                        padding: 1px 18px;
+                        font-weight: bold;
+                        color: orangered;
+                        background-color: white;
+                        border: 2px solid orangered;
+                        border-radius: 3px;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 7px
+    
+                                
+                    }
+                }
+
+               
+                
+            }
+
+            .general-infos-wrapper{
+                display: flex;
+                flex-direction: column;
+                padding : 0px 0px;
+                gap:10px;
+                .one-detail{
+                    display: flex;
+                    flex-direction:row ;
+                    align-items: center;
+                    gap:5px;
+                    .label{
+                        color: #7D838A;
+                        font-weight: 500;
+                    }
+                    .detail{
+                        font-weight: 500;
+                        margin-left: 5px;
+                    }
+                    .rate {
+                        display: flex ;
+                        flex-direction: row ;
+                        margin-top: -2px;
+                        &>p {
+                            margin:0px
+                        }
+                    }
+                }
+                
+            }
+
+            .email-applicant-btn{
+                padding : 10px;
+                border : 2px solid #2ba7df ;
+                border-radius: 5px;
+                width: 80%;
+                margin: auto ;
+                color:#2ba7df;
+                font-size: 17px;
+                font-weight: bold;
+                background-color: #E1E8EB ; 
+                cursor: pointer;
+                &:hover {
+                    background-color: white 
+                }
+
+            }
+        }
+        .second-section{
+            @include applicant-section ;
+            flex :1 ;
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            padding:15px;
+
+            .advanced-detail-wrapper{
+                width: 100%;
+                border: 1px solid #d7d7d7 ;
+                display: flex;
+                flex-direction: column;
+
+                
+                
+                .detail-title{
+                    color: #2ba7df;
+                    font-size: 16px;
+                    font-weight: 500 ;
+                    padding:5px;
+                    width: 100% ;
+                    border-bottom: 1px solid #d7d7d7
+                }
+                .details {
+                    padding : 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    .motivational-letter-file{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-end;
+                        justify-content: center;
+                        gap: 5px;
+                        font-size: 14px;
+                        font-weight: 500;                                     
+                    }
+                    .download-btn{
+                        
+                        height: 30px;
+                        padding: 10px;
+                        font-size: 15px;
+                        font-weight: bolder;
+                        background-color: #2ba7df;
+                        border : 2px solid transparent;
+                        color:white;
+                        border-radius: 25px;
+                        display: flex;
+                        flex-direction: row;
+                        gap:3px;
+                        align-items:center;
+                        justify-content: center ;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: white ;
+                            border : 2px solid #2ba7df;
+                            color:#2ba7df;
+                        }
+                    }
+
+                }
+
+                .bachelor-details{
+                    padding:10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap:10px;
+                    .first-bachelor-detail{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+    
+                    }
+                    .bachelor-marks{
+                        display: flex;
+                        flex-direction: row;
+                        // align-items: center;
+                        justify-content: space-between;
+                       
+                        .bachelor-marks-title{
+                            color: #7D838A;
+                            font-weight: 500;
+                            
+                        }
+                        .bachelors-marks-wrapper{
+                            
+                        }
+
+                    }
+
+                    .bachelor-grades-transcript-wrapper{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        .bachelor-grades-transcript{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-end;
+                            gap: 5px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            
+                        }
+                        .download-btn-wrapper{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-end;
+
+                            .download-btn{
+                                width: fit-content;
+                                height: 30px;
+                                padding: 10px;
+                                font-size: 15px;
+                                font-weight: bolder;
+                                background-color: #2ba7df;
+                                border : 2px solid transparent;
+                                color:white;
+                                border-radius: 25px;
+                                display: flex;
+                                flex-direction: row;
+                                gap:3px;
+                                align-items:center;
+                                justify-content: center ;
+                                cursor: pointer;
+                                &:hover {
+                                    background-color: white ;
+                                    border : 2px solid #2ba7df;
+                                    color:#2ba7df;
+                                }
+                            }
+                        }
+                        
+
+                    }
+
+                }
+                .one-detail{
+                    display: flex;
+                    flex-direction:row ;
+                    align-items: center;
+                    gap:5px;
+                    .label{
+                        color: #7D838A;
+                        font-weight: 500;
+                    }
+                    .detail{
+                        font-weight: 500;
+                        margin-left: 5px;
+                    }
+                }
+
+
+                .social-media-accounts-wrapper{
+                    display: flex;
+                    flex-direction: column;
+                   
+                    .social{
+                        display: flex;
+                        flex-direction:row ;
+                        gap:10px;
+                        margin-left: 10px;
+                        align-items: center;
+                        .social-media-icon{
+                            width: 30px;
+                            height: 30px;
+                            & > img {
+                                width: 100%;
+                            height: 100%;
+                            }
+                        }
+                        .social-media-link{
+                            color: black;
+                            font-size: 15px;
+                            font-weight: 500;
+                            text-decoration: underline;
+                            
+                        
+                        }
+
+                    }
+                }
+
+            }
+
+
+
+        }
+        .third-section{
+            @include applicant-section ;
+            flex:0.5;
+            padding: 5px;
+            height: fit-content;
+            .add-note{
+                border: 1px solid #d7d7d7   ;
+                margin-top: 10px;  
+                text-align: center;
+                
+            }
+
+            .notes-title{
+                text-align: left;
+                color: #2ba7df;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 5px;
+                width: 100%;
+                border-bottom: 1px solid #d7d7d7;
+            }
+            .notes-text{
+                width: 95%;
+                max-width: 210px;
+                margin: auto;
+                margin-top: 10px;
+                min-height: 70px;
+                background-color: #DEE8F0;
+                border : 1px solid #2ba7df;
+                border-radius: 3px;
+                
+            }
+            .notes-btns{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                gap: 11px;
+                height: 30px;
+                margin: 10px 0px;
+                padding: 0px 10px;
+                
+                .save-btn{
+                    padding: 0px 12px;
+                    background-color: #2ba7df;
+                    border:2px solid transparent ;
+                    color : white ;
+                    font-size: 15px ;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #fff;
+                        border:2px solid #2ba7df ;
+                        color : #2ba7df ;
+                    }
+                }
+                .cancel-btn{
+                    background-color: #fff;
+                    border:2px solid #2ba7df ;
+                    color : #2ba7df ;
+                    font-size: 15px ;
+                    border-radius: 25px;
+                    padding : 0px 8px ;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #2ba7df;
+                        border:2px solid transparent ;
+                        color : white ;
+                    }
+                }
+            }
+            .saved-notes-list{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                margin-top: 30px;
+            }
+        }
+    
+    }
+
+}

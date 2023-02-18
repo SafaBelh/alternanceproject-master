@@ -1,0 +1,73 @@
+.job-position-wrapper{
+
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: #E1E8EB; 
+
+    }
+
+
+
+    .infos{
+        display: flex;
+        flex-direction: column;
+        .title{
+            color:#2ba7df ;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        .other-infos{
+            display: flex;
+            flex-direction: row;
+            gap:20px ;
+            align-items: center;
+            .company , .location {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                gap:3px;
+                color : #7D838A;
+                font-weight: bold;
+                font-size: 14px;
+               
+                
+            }
+            
+        }
+    }
+    .take-action {
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+        .expiry-date{
+            color : #7D838A;
+            font-weight: bold;
+            font-size: 15px;
+            display: flex;
+            flex-direction: row;
+            gap:3px
+        }
+        .apply-btn{
+            height: 30px;
+            padding: 5px 10px;
+            background-color: #2ba7df;
+            border : 2px solid transparent;
+            color:white ;
+            font-size: 16px ;
+            border-radius: 3px;
+            font-weight: 500;
+            cursor: pointer;
+            &:hover {
+                background-color: #fff;
+                border : 2px solid #2ba7df;
+                color:#2ba7df ;
+            }
+        }
+    }
+}

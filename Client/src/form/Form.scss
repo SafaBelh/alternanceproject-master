@@ -1,0 +1,374 @@
+// #2ba7df  #7D838A
+
+.form-body {
+  // height: 100vh;
+  background-color: #e1e8eb;
+  width: 100%;
+  .header {
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 20%) !important;
+    background-color: #fff;
+    .header_container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 53px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2px;
+      width: 100%;
+      padding: 5px 40px;
+      box-shadow: 0px 1px 2px rgb(0 0 0 / 20%) !important;
+      gap: 20px;
+      .logo-header-btn-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+        cursor: pointer;
+        // Start Logo Styling //
+        .logo {
+          display: flex;
+          flex-direction: row;
+          height: fit-content;
+          gap: 7px;
+          .logo-icon {
+            width: 40px;
+            height: 40px;
+          }
+          .logo-text {
+            color: #2ba7df;
+            height: 45px;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .company-page-btn1 {
+          color: #34a9f6;
+          border: 2px solid #34a9f6;
+          border-radius: 25px;
+          height: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 12px;
+        }
+        // End Logo Styling //
+      }
+
+      .user {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        justify-content: space-between;
+        padding: 0px 10px;
+        .signUp-btn {
+          height: 30px;
+          padding: 0px 10px;
+          background-color: #2ba7df;
+          border: 2px solid transparent;
+          color: white;
+          font-size: 16px;
+          border-radius: 3px;
+          font-weight: bold;
+          cursor: pointer;
+          &:hover {
+            background-color: white;
+            border: 2px solid #2ba7df;
+            color: #2ba7df;
+          }
+        }
+        .login-btn {
+          height: 30px;
+          padding: 0px 10px;
+
+          background-color: white;
+          border: 2px solid #2ba7df;
+          color: #2ba7df;
+          font-size: 16px;
+          border-radius: 3px;
+          font-weight: bold;
+          cursor: pointer;
+          &:hover {
+            background-color: #2ba7df;
+            border: 2px solid transparent;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .job-title-company-name-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    margin: auto;
+    padding: 10px 14.5%;
+    justify-content: space-between;
+    height: 40px;
+    // border:2px solid red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    .job-title,
+    .company-name {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+
+      & > label {
+        font-weight: bold;
+        color: #7d838a;
+        font-size: 17px;
+      }
+      & > span {
+        font-weight: bold;
+        font-size: 17px;
+      }
+    }
+  }
+
+  .container {
+    width: 70%;
+    margin: auto;
+    // border : 2px solid;
+    // height: calc(100vh - 55px - 20px);
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 40px;
+
+    .form-title-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      align-items: flex-end;
+      justify-content: center;
+      color: #2ba7df;
+      .form-title {
+        font-size: 24px;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
+    .form-description {
+      font-size: 15px;
+      color: #7d838a;
+      width: fit-content;
+      margin: auto;
+      margin-top: 20px;
+    }
+    .form-container {
+      padding: 30px 10%;
+      form {
+        margin-top: 30px;
+        width: 95%;
+        // border: 2px solid;
+        margin: auto;
+        margin-top: 30px;
+
+        .form-title,
+        .resume-title {
+          font-size: 24px;
+          text-decoration: underline;
+          font-weight: bold;
+          color: #2ba7df;
+        }
+        .general-infos {
+          display: flex;
+          flex-direction: column;
+          margin-top: 20px;
+          gap: 10px;
+          .full-name,
+          .degree-infos-wrapper {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+          }
+          .email-number {
+            display: flex;
+            flex-direction: row;
+
+            width: 100%;
+            justify-content: space-between;
+            .phone-number-wrapper {
+              display: flex;
+              flex-direction: row;
+              gap: 10px;
+              justify-content: left;
+              align-items: center;
+              select {
+                height: 38px;
+                margin-top: 3px;
+                // color: rgba(0, 0, 0, 0.87);
+                border: 1px solid #c4c4c4;
+                border-radius: 3px;
+                padding: 3px;
+                cursor: pointer;
+                color: #65686b;
+              }
+            }
+          }
+        }
+        .bachelor-infos-wrapper {
+          width: 100%;
+          // border: 2px solid;
+          margin-top: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 10px;
+          .bachelor {
+            label {
+              color: #65686b;
+              font-size: 18px;
+              font-weight: 400;
+            }
+            select {
+              height: 30px;
+              margin-top: 3px;
+              border: 1px solid #c4c4c4;
+              border-radius: 3px;
+              padding: 5px 20px;
+              cursor: pointer;
+              color: #7d838a;
+              font-size: 16px;
+            }
+          }
+          .bachelor-marks {
+            .subject {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+            label {
+              color: #65686b;
+              font-size: 18px;
+              font-weight: 400;
+            }
+            input {
+              height: 30px;
+              margin-top: 3px;
+              border: 1px solid #c4c4c4;
+              border-radius: 3px;
+              padding: 5px;
+              cursor: pointer;
+              color: #7d838a;
+              margin-left: 10px;
+            }
+          }
+        }
+        .submit-btn-wrapper {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 35px;
+
+          .submit-form-btn {
+            // width: 125px;
+            padding: 10px;
+            background-color: #2ba7df;
+            border: 1px solid white;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            // height: 30px;
+            cursor: pointer;
+            &:hover {
+              background-color: white;
+              border: 1px solid #2ba7df;
+              color: #2ba7df;
+            }
+          }
+        }
+      }
+    }
+  }
+  .upload-area-wrapper {
+    width: 100%;
+    background-color: #e1e8eb54;
+    min-width: 905px;
+    border: 2px dotted #2ba7df;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 15px;
+    margin: 20px 0;
+    .upload-button {
+      width: 125px;
+      padding: 5px;
+      background-color: #2ba7df;
+      border: 1px solid white;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      height: 30px;
+      cursor: pointer;
+      &:hover {
+        background-color: white;
+        border: 1px solid #2ba7df;
+        color: #2ba7df;
+      }
+    }
+    .left {
+      display: flex;
+      flex: 0.65;
+
+      flex-direction: column;
+      gap: 10px;
+      .title {
+        font-weight: bold;
+        font-size: 17px;
+      }
+      .description {
+        font-size: 13px;
+        color: #7d838a;
+      }
+      .upload-input {
+        & > input {
+        }
+        input::file-selector-button {
+          font-weight: bold;
+          color: #2ba7df;
+          padding: 0.5em;
+          border: thin solid #2ba7df;
+          border-radius: 3px;
+          background-color: white;
+          cursor: pointer;
+          margin-right: 10px;
+        }
+      }
+    }
+    .preview-avatar-upload {
+      width: 120px;
+      height: 120px;
+      border: 0.5px solid #7d838a;
+    }
+    .preview-file-upload {
+      height: 30px;
+      border: 1px solid #2ba7df;
+      padding: 5px 10px;
+      width: fit-content;
+      font-size: 15px;
+      color: #7d838a;
+      border-radius: 5px;
+    }
+    .right-files {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      height: fit-content;
+      align-self: flex-end;
+    }
+  }
+  .footer {
+    height: 50px;
+    width: 100%;
+    background-color: #e1e8eb;
+  }
+}

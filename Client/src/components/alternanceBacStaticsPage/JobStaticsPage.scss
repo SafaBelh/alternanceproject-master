@@ -1,0 +1,94 @@
+// #2ba7df  #7D838A
+
+.job-statics-page-container{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    
+
+    .job-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .job-date-menu{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       .job-date{
+        color : #7D838A ;
+        font-size: 15px;
+       }
+       .job-menu-btn{
+        padding : 0px 10px ;
+        height: 30px;
+        color : #2ba7df ;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #ffffff5e;
+        border : 2px solid #2ba7df  ;
+        border-radius: 3px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: transparent;
+
+
+        }
+       }
+    }
+    .pipeline{
+        margin-top: 20px;
+        width: 100%;
+        height: 40px;
+        background-color: #69c9f921;
+        display: flex;
+        align-items: center;
+        &>ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            height: 100%;
+            padding: 0px ;
+            align-items: center;
+           
+            &>a {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                align-items: center;
+                flex: 1;
+                text-decoration: none;
+                cursor: pointer;
+                color: #7D838A;
+                font-weight: 500;
+                border: 1px solid transparent;
+                border-bottom: 1px solid #2ba7df;
+                &:focus {
+                    border-top: 1px solid #2ba7df;
+                    border-right: 1px solid #2ba7df;
+                    border-left: 1px solid #2ba7df;
+                    border-bottom: 1px solid transparent ;
+                    background-color: white;
+                }
+               &>span {}
+            }
+        }
+    }
+    .list-application{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        max-height: 431px ;
+        &::-webkit-scrollbar {
+            display: none;
+          }
+    }
+}

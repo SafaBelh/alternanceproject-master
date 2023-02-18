@@ -1,0 +1,53 @@
+@mixin job-statics-card-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+.job-statics-card-wrapper{
+    display: flex;
+    padding: 20px 15px;
+    gap: 20px;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 95px;
+    width: 220px;
+    align-items: center;
+    cursor: pointer;
+
+    .job-statics-card-icon-blue{
+        @include job-statics-card-icon;
+
+        background-color: #A9CEF8;
+    }
+    .job-statics-card-icon-purple{
+        @include job-statics-card-icon;
+
+        background-color: #E4AAF8;
+    }
+    .job-statics-card-icon-yellow{
+        @include job-statics-card-icon;
+
+        background-color: #FEE6A9;
+    }
+    .job-statics-card-icon-green{
+        @include job-statics-card-icon;
+
+        background-color: #BBEBC2;
+    }
+    .job-statics-card-infos{
+        display: flex;
+        flex-direction: column;
+        .number-infos{
+            font-weight: bolder;
+        }
+        .title-infos{
+            color : #9d9d99
+        }
+    }
+
+}

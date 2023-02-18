@@ -1,0 +1,216 @@
+.company-page-body {
+  // height: 100vh;
+  background-color: #e1e8eb;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.header {
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 20%) !important;
+  background-color: #fff;
+  .header_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 53px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+    width: 100%;
+    padding: 5px 40px;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 20%) !important;
+    gap: 20px;
+    .logo-header-btn-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      align-items: center;
+      cursor: pointer;
+      // Start Logo Styling //
+      .logo {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        gap: 7px;
+        .logo-icon {
+          width: 40px;
+          height: 40px;
+        }
+        .logo-text {
+          color: #2ba7df;
+          height: 45px;
+          font-size: 20px;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .company-page-btn1 {
+        color: #34a9f6;
+        border: 2px solid #34a9f6;
+        border-radius: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+      }
+      // End Logo Styling //
+    }
+
+    .user {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+      justify-content: space-between;
+      padding: 0px 10px;
+      .signUp-btn {
+        height: 30px;
+        padding: 0px 10px;
+        background-color: #2ba7df;
+        border: 2px solid transparent;
+        color: white;
+        font-size: 16px;
+        border-radius: 3px;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          background-color: white;
+          border: 2px solid #2ba7df;
+          color: #2ba7df;
+        }
+      }
+      .login-btn {
+        height: 30px;
+        padding: 0px 10px;
+
+        background-color: white;
+        border: 2px solid #2ba7df;
+        color: #2ba7df;
+        font-size: 16px;
+        border-radius: 3px;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          background-color: #2ba7df;
+          border: 2px solid transparent;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.company-page-container {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 10px;
+  height: fit-content;
+  background-color: #fff;
+  position: relative;
+
+  .cover {
+    width: 100%;
+    height: 360px;
+    background: url(../assets/icons/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    margin-top: -1px;
+  }
+  .comany-name-logo-wrapper {
+    position: absolute;
+    width: 80%;
+    margin: auto;
+    background-color: transparent;
+    margin-top: -87px;
+    margin-left: 7%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-end;
+
+    .company-logo-wrapper {
+      display: flex;
+      flex-direction: row;
+      height: 150px;
+      width: 150px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .name {
+      font-size: 29px;
+      font-weight: 500;
+      margin-bottom: 13px;
+      color: #2ba7df;
+    }
+  }
+
+  .jobs-section {
+    margin-top: 12%;
+    margin-bottom: 50px;
+    width: 85%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .open-jobs-title {
+      font-size: 28px;
+      font-weight: 700;
+      height: 50px;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    }
+  }
+  .life-at-company-title {
+    width: 83%;
+    margin: auto;
+    font-size: 27px;
+    font-weight: 700;
+    height: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    margin-top: 65px;
+  }
+
+  .life-at-company {
+    padding: 20px 10px;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    .left {
+      flex: 0.5;
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .right {
+      flex: 0.5;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      // justify-content: space-between;
+      gap: 30px;
+      & > img {
+        width: 45%;
+        height: 45%;
+      }
+    }
+  }
+}
+
+.footer {
+  height: 80px;
+  background-color: #e1e8eb;
+}

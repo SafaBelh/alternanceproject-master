@@ -1,0 +1,103 @@
+.jobs-container {
+    padding : 30px ;
+    .jobs-navbar{
+        list-style: none;
+        width: 100%;
+        height: 35px;
+        background-color: #E6ECF1;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+        gap:30px;
+        & > a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            color: #7D838A;
+            height: 40px;
+            border-bottom: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            &:focus {
+                border-bottom: 2px solid #2ba7df;
+                color: black;
+                font-weight: 500;
+            }
+           
+
+            
+        }
+    }
+    .search-add-btn-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .search{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            .search-job-input{
+                height: 33px;
+                width: 367px;
+                padding: 0px 10px;
+                background-color: transparent;
+                border: 1px solid #7D838A;
+                border-radius: 2px;
+                
+            }
+
+        }
+        .add-job-btn{
+            padding: 0px 10px;
+            background-color: #2ba7df;
+            color: white;
+            border: 2px solid transparent;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            &:hover {
+                background-color: white;
+            color: #2ba7df;
+            border: 2px solid #2ba7df;
+
+            }
+        }
+        
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 30px;
+    }
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        &>a {
+            color: #2ba7df;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;            }
+
+        }
+    }
+    .job-status > span{
+        color: white;
+        padding:3px 10px ;
+        background-color: green;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .job-title  , .condidates{
+        color: #2ba7df;
+        font-weight: bold;
+        font-size: 15px;
+        
+    }
+    
+}

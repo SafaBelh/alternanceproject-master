@@ -1,0 +1,290 @@
+// Start Importing Abstracts
+@use "../../assets/styles/abstracts/index" as *;
+.container {
+  // max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .main_layout {
+    z-index: -1;
+    .header {
+      box-shadow: 0px 1px 2px rgb(0 0 0 / 20%) !important;
+      background-color: #fff;
+      .header_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 53px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2px;
+        width: 100%;
+        padding: 5px 10px;
+        box-shadow: 0px 1px 2px rgb(0 0 0 / 20%) !important;
+        gap: 20px;
+        .logo-header-btn-wrapper {
+          display: flex;
+          flex-direction: row;
+          gap: 50px;
+          align-items: center;
+          cursor: pointer;
+          // Start Logo Styling //
+          .logo {
+            display: flex;
+            flex-direction: row;
+            height: fit-content;
+            gap: 7px;
+            .logo-icon {
+              width: 40px;
+              height: 40px;
+            }
+            .logo-text {
+              color: #2ba7df;
+              height: 45px;
+              font-size: 20px;
+              font-weight: bold;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .company-page-btn1 {
+            color: #34a9f6;
+            border: 2px solid #34a9f6;
+            border-radius: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+          // End Logo Styling //
+        }
+
+        .notification-company-wrapper {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          .company {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+          .company-name {
+            font-size: 17px;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    // End Header Styling //
+
+    // Start FullPage Styling //
+    .full_page_container {
+      display: flex;
+      gap: 20px;
+      flex-direction: row;
+      background-color: #e1e8eb;
+      margin-top: 1px;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+      // Start Extended Sidebar Styling //
+      .sidebar {
+        margin-top: -2px;
+        background: transparent linear-gradient(180deg, #40bcf9, #1e87f0) 0 0
+          no-repeat padding-box;
+        overflow: hidden;
+        transition: all 0.5s ease-out;
+        width: 233px;
+        height: calc(100vh - 54px);
+
+        .sidebar_content_list {
+          padding: 20px 0px;
+          margin: 0px;
+          margin-top: 20px;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          a {
+            text-decoration: none;
+            color: white;
+            border-bottom-left-radius: 15px;
+            border-top-left-radius: 15px;
+            margin-left: 10px;
+            padding: 2px 0px;
+
+            &:hover {
+              background-color: #fff;
+              color: #40bcf9;
+            }
+            &:focus {
+              background-color: #fff;
+              color: #40bcf9;
+            }
+          }
+          li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 10px;
+            margin-right: 20px;
+            .main-sidebar-item {
+              display: flex;
+              flex-direction: row;
+              gap: 10px;
+
+              .sidebar_content_title {
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+              }
+            }
+          }
+
+          .hidden_sidebar_sub_list {
+            display: none;
+          }
+
+          ul {
+            display: block;
+
+            a {
+              text-decoration: none;
+              color: white;
+              border-bottom-left-radius: 15px;
+              border-top-left-radius: 15px;
+              margin-left: 10px;
+              padding: 2px 0px;
+
+              &:hover {
+                background-color: #fff !important;
+                color: #40bcf9;
+              }
+              &:focus {
+                background-color: #fff !important;
+                color: #40bcf9;
+              }
+            }
+          }
+        }
+      }
+      // End Extended Sidebar Styling //
+
+      // Start Minimal Sidebar Styling //
+      // .minimal_sidebar {
+      //   width: 134px;
+      //   margin-top: -2px;
+      //   // height: 100vh;
+      //   background: transparent linear-gradient(180deg, #40bcf9, #1e87f0) 0 0
+      //     no-repeat padding-box;
+      //   overflow: hidden;
+      //   transition: all 0.5s ease-out;
+      //   .sidebar_content_list {
+      //     padding-top: 40px;
+      //     padding-left: 0px;
+      //     padding-right: 0px;
+      //     margin: 0px;
+      //     list-style: none;
+      //     & > li {
+      //       a {
+      //         text-decoration: none;
+      //         &.active {
+      //           .minimal_sidebar_content {
+      //             background-color: #fff;
+      //             border-radius: 10px;
+      //             .sidebar_content_title {
+      //               margin-top: 4px;
+      //               color: #3870a3;
+      //               font-weight: 700;
+      //               font-size: 15px;
+      //               line-height: 17px;
+      //             }
+      //           }
+      //           .sidebar_content_icon_wrapper {
+      //             text-align: center;
+      //             margin: 0px;
+      //             padding: 0px;
+      //             .sidebar_content_icon {
+      //               filter: invert(60%) sepia(30%) saturate(904%)
+      //                 hue-rotate(170deg) brightness(64%) contrast(100%);
+      //             }
+      //           }
+      //         }
+      //         .minimal_sidebar_content {
+      //           height: fit-content;
+      //           width: fit-content;
+      //           min-width: 80px;
+      //           text-align: center;
+      //           display: flex;
+      //           flex-direction: column;
+      //           padding: 5px;
+      //           margin-left: auto;
+      //           margin-right: auto;
+      //           min-height: 70px;
+      //           .sidebar_content_icon {
+      //             width: 28px;
+      //             height: 28px;
+      //           }
+      //           .sidebar_content_title {
+      //             margin-top: 4px;
+      //             color: #fff;
+      //             font-weight: 700;
+      //             font-size: 15px;
+      //             line-height: 17px;
+      //           }
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+      // End Minimal Sidebar Styling //
+
+      // Start Views Styling //
+      .full_page_wrapper {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1;
+        max-height: 800px;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        .children_section {
+          // border: 2px solid blue;
+          display: flex;
+          flex-direction: row;
+          height: 165px;
+          width: 100%;
+        }
+      }
+
+      .view {
+        flex: 1;
+        // border: 2px solid green;
+        height: 520px;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+      .view_wallet {
+        flex: 1;
+        margin-top: 30px !important ;
+        // border: 2px solid green;
+      }
+
+      // End Views Styling //
+    }
+    // End FullPage Styling //
+  }
+}

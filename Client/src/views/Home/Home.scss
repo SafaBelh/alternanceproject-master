@@ -1,0 +1,30 @@
+
+.home-container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.jobs-statics-cards-wrapper {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.recent-applicants-section-container{
+    width: 95%;
+    
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    .recent-applicants-section-title{
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    .recent-applicants-wrapper{
+        display: flex;
+        flex-direction: row;
+        gap:30px
+    }
+}
